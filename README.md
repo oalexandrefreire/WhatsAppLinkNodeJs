@@ -7,8 +7,17 @@ Management of sending text via URL
 npm install @aninga/whatsapp-manager 
 
 # Usage
-import {Send} from '@aninga/whatsapp-manager'
-or
+```
 import * as WA from '@aninga/whatsapp-manager'
+or
+import {WMCompose, WMSend} from '@aninga/whatsapp-manager';
 
-WA.Send('5569999999999', 'Hello')
+let example = new WMCompose();
+example.writeText("Hello");
+example.writeText("line break: before, after",1,1);
+example.writeText(":)");
+WMSend('5569999999999', example.getText());
+
+WMSend('5569999999999', "other text");
+
+```
