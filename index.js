@@ -9,3 +9,25 @@ function Send(phone, text) {
     win.focus();
 }
 exports.Send = Send;
+var Compose = /** @class */ (function () {
+    function Compose() {
+    }
+    Compose.prototype.writeText = function (text, lineBreakAfter, lineBreakBefore) {
+        if (lineBreakAfter === void 0) { lineBreakAfter = 0; }
+        if (lineBreakBefore === void 0) { lineBreakBefore = 0; }
+        var lbAfter = "";
+        var lbBefore = "";
+        for (var i = 0; lineBreakAfter > i; i++) {
+            lbAfter += "\n";
+        }
+        for (var i = 0; lineBreakBefore > i; i++) {
+            lbBefore += "\n";
+        }
+        this._text += lbAfter + text + lbBefore;
+    };
+    Compose.prototype.getText = function () {
+        return this._text;
+    };
+    return Compose;
+}());
+exports.Compose = Compose;

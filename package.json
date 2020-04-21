@@ -1,9 +1,10 @@
 {
   "name": "@aninga/whatsapp-manager",
-  "version": "1.1.5",
+  "version": "1.2.6",
   "description": "Management of sending text via URL",
   "main": "index.js",
   "scripts": {
+    "build": "tsc index.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -23,7 +24,7 @@
   "license": "GPL-3.0",
   "bugs": {
     "url": "https://github.com/aningasistemas/whatsapp-manager/issues",
-    "email" : "ale@alexandrefreire.me"
+    "email": "ale@alexandrefreire.me"
   },
   "homepage": "https://github.com/aningasistemas/whatsapp-manager#readme"
 }
