@@ -15,12 +15,15 @@
     "manager",
     "whastsapp-manager",
     "whatsapp",
-    "manager"
+    "manager",
+    "send text url",
+    "make whatsapp url"
   ],
   "author": "Aninga Sistemas",
-  "license": "ISC",
+  "license": "GPL-3.0",
   "bugs": {
-    "url": "https://github.com/aningasistemas/whatsapp-manager/issues"
+    "url": "https://github.com/aningasistemas/whatsapp-manager/issues",
+    "email" : "ale@alexandrefreire.me"
   },
   "homepage": "https://github.com/aningasistemas/whatsapp-manager#readme"
 }
