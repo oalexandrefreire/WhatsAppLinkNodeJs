@@ -10,9 +10,13 @@ export function Send(phone, text)
 
 export class Compose {
 
-    private _text: any;
+    private _text: string;
 
-    writeText(text, lineBreakAfter = 0, lineBreakBefore = 0)
+    constructor() {
+        this._text = "";
+    }
+
+    writeText(text = "", lineBreakBefore = 0,lineBreakAfter = 0)
     {
         let lbAfter = "";
         let lbBefore = "";
@@ -22,11 +26,11 @@ export class Compose {
         for (let i = 0; lineBreakBefore > i; i++){
             lbBefore += "\n";
         }
-        this._text += lbAfter + text + lbBefore;
+        this._text += (lbAfter != undefined ? lbAfter : "") + (text != undefined ? text : "") + (lbBefore != undefined ? lbBefore : "");
     }
 
     getText(){
-        return this._text;
+        return this._text != undefined ? this._text : "";
     }
 
 }
