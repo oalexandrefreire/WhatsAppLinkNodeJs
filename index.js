@@ -25,7 +25,7 @@ var WMCompose = /** @class */ (function () {
         for (var i = 0; lineBreakBefore > i; i++) {
             lbBefore += "\n";
         }
-        this._text += (lbAfter != undefined ? lbAfter : "") + (text != undefined ? text : "") + (lbBefore != undefined ? lbBefore : "");
+        this._text += (lbBefore != undefined ? lbBefore : "") + (text != undefined ? text : "") + (lbAfter != undefined ? lbAfter : "");
     };
     WMCompose.prototype.getText = function () {
         return this._text != undefined ? this._text : "";
