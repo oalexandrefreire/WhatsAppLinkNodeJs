@@ -1,0 +1,26 @@
+{
+  "name": "whatsapp-manager",
+  "version": "1.0.0",
+  "description": "Management of sending text via URL",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aningasistemas/whatsapp-manager.git"
+  },
+  "keywords": [
+    "whatsapp",
+    "manager",
+    "whastsapp-manager",
+    "whatsapp",
+    "manager"
+  ],
+  "author": "Aninga Sistemas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aningasistemas/whatsapp-manager/issues"
+  },
+  "homepage": "https://github.com/aningasistemas/whatsapp-manager#readme"
+}
