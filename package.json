@@ -1,5 +1,5 @@
 {
-  "name": "whatsapp-manager",
+  "name": "@aninga/whatsapp-manager",
   "version": "1.0.0",
   "description": "Management of sending text via URL",
   "main": "index.js",

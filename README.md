@@ -1,1 +1,1 @@
-whatsapp-manager
+Management of sending text via URL
