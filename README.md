@@ -1,3 +1,6 @@
+![npm (scoped)](https://img.shields.io/npm/v/@aninga/whatsapp-manager)
+![NPM](https://img.shields.io/npm/l/@aninga/whatsapp-manager)
+
 Management of sending text via URL
 
 # Install
