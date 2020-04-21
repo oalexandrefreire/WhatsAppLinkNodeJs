@@ -1,19 +1,19 @@
 "use strict";
 exports.__esModule = true;
-function Hello(name) {
+function WMHello(name) {
     return "Hello " + name + "!";
 }
-exports.Hello = Hello;
-function Send(phone, text) {
+exports.WMHello = WMHello;
+function WMSend(phone, text) {
     var win = window.open("https://wa.me/" + phone + "?text=" + encodeURIComponent(text), '_blank');
     win.focus();
 }
-exports.Send = Send;
-var Compose = /** @class */ (function () {
-    function Compose() {
+exports.WMSend = WMSend;
+var WMCompose = /** @class */ (function () {
+    function WMCompose() {
         this._text = "";
     }
-    Compose.prototype.writeText = function (text, lineBreakBefore, lineBreakAfter) {
+    WMCompose.prototype.writeText = function (text, lineBreakBefore, lineBreakAfter) {
         if (text === void 0) { text = ""; }
         if (lineBreakBefore === void 0) { lineBreakBefore = 0; }
         if (lineBreakAfter === void 0) { lineBreakAfter = 0; }
@@ -27,9 +27,9 @@ var Compose = /** @class */ (function () {
         }
         this._text += (lbAfter != undefined ? lbAfter : "") + (text != undefined ? text : "") + (lbBefore != undefined ? lbBefore : "");
     };
-    Compose.prototype.getText = function () {
+    WMCompose.prototype.getText = function () {
         return this._text != undefined ? this._text : "";
     };
-    return Compose;
+    return WMCompose;
 }());
-exports.Compose = Compose;
+exports.WMCompose = WMCompose;

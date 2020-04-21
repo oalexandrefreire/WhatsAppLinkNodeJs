@@ -1,14 +1,14 @@
-export function Hello(name) {
+export function WMHello(name) {
     return "Hello " + name + "!";
 }
 
-export function Send(phone, text)
+export function WMSend(phone, text)
 {
   let win = window.open("https://wa.me/"+ phone +"?text=" + encodeURIComponent(text), '_blank');
   win.focus();
 }
 
-export class Compose {
+export class WMCompose {
 
     private _text: string;
 
