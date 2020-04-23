@@ -8,8 +8,6 @@ npm install @aninga/whatsapp-manager
 
 # Usage
 ```
-import * as WA from '@aninga/whatsapp-manager'
-or
 import {WMCompose, WMSend} from '@aninga/whatsapp-manager';
 
 let example = new WMCompose();
