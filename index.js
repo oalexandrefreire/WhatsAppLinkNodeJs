@@ -6,31 +6,15 @@ function WMHello(name) {
 }
 exports.WMHello = WMHello;
 function WMSend(phone, text) {
-    var win = window.open("https://wa.me/" + phone + "?text=" + encodeURIComponent(text), '_blank');
-    win.focus();
-}
-exports.WMSend = WMSend;
-function WMSendv2(phone, text) {
-    var win = window.open("https://api.whatsapp.com/send?text=" + encodeURIComponent(text) + "&phone=" + phone);
-    win.focus();
-}
-exports.WMSendv2 = WMSendv2;
-function WMSendv3(phone, text) {
-    var win = window.open("whatsapp://send?phone=" + phone + "?text=" + encodeURIComponent(text));
-    win.focus();
-}
-exports.WMSendv3 = WMSendv3;
-function WMSendv4(phone, text) {
     var result = browser_detect_1["default"]();
     if (result.mobile) {
         window.location.replace("whatsapp://send?text=" + encodeURIComponent(text) + "&phone=" + phone);
     }
     else {
-        //window.location.replace("https://api.whatsapp.com/send?text=" + encodeURIComponent(text) + "&phone=" + phone);
         window.location.replace("https://wa.me/" + phone + "?text=" + encodeURIComponent(text));
     }
 }
-exports.WMSendv4 = WMSendv4;
+exports.WMSend = WMSend;
 var WMCompose = /** @class */ (function () {
     function WMCompose() {
         this._text = "";
