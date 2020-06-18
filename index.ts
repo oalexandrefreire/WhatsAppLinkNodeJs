@@ -14,7 +14,6 @@ export function WMSend(phone, text)
     }
 }
 
-
 export class WMCompose {
 
     private _text: string;

@@ -19,3 +19,6 @@ WMSend('5569999999999', example.getText());
 WMSend('5569999999999', "other text");
 
 ```
+
+# dependencies
+"browser-detect": "^0.2.28"

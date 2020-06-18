@@ -1,6 +1,6 @@
 {
   "name": "@aninga/whatsapp-manager",
-  "version": "1.6.6",
+  "version": "1.6.7",
   "description": "Management of sending text via URL",
   "main": "index.js",
   "scripts": {
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/alexandrefreiref/whatsapp-manager.git"
+    "url": "git+https://github.com/alexandrefreiref/Af.WhatsappManager.git"
   },
   "keywords": [
     "whatsapp",
@@ -24,10 +24,10 @@
   "author": "Alexandre Freire",
   "license": "GPL-3.0",
   "bugs": {
-    "url": "https://github.com/alexandrefreiref/whatsapp-manager/issues",
+    "url": "https://github.com/alexandrefreiref/Af.WhatsappManager/issues",
     "email": "ale@alexandrefreire.me"
   },
-  "homepage": "https://github.com/alexandrefreiref/whatsapp-manager#readme",
+  "homepage": "https://github.com/alexandrefreiref/Af.WhatsappManager#readme",
   "dependencies": {
     "browser-detect": "^0.2.28"
   }
