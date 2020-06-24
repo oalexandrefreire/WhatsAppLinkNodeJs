@@ -11,7 +11,9 @@ function WMSend(phone, text) {
         window.location.replace("whatsapp://send?text=" + encodeURIComponent(text) + "&phone=" + phone);
     }
     else {
-        window.location.replace("https://wa.me/" + phone + "?text=" + encodeURIComponent(text));
+        var win = window.open("https://wa.me/" + phone + "?text=" + encodeURIComponent(text), '_blank');
+        win.focus();
+        // window.open("https://wa.me/"+ phone +"?text=" + encodeURIComponent(text),'');
     }
 }
 exports.WMSend = WMSend;
